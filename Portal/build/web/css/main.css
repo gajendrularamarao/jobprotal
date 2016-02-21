@@ -1,0 +1,69 @@
+/* Main
+ * ========================================================================== */
+
+/* Button
+ * -------------------------------------------------------------------------- */
+
+/* Content */
+
+
+.img-container,
+.img-preview { 
+  width: 100%;
+ 
+}
+
+.img-container {
+  min-height: 200px;
+  max-height: 350px;
+}
+
+@media (min-width: 768px) {
+  .img-container {
+    min-height: 300px;
+  }
+}
+
+.img-container > img {
+  max-width: 100%;
+}
+
+.docs-preview {
+  margin-right: -15px;
+}
+
+.img-preview {
+  float: right;
+  margin-right: 45%;
+  overflow: hidden;
+  margin-top: -155px;
+}
+
+.img-preview > img {
+  max-width: 100%;
+   
+  overflow: hidden;
+}
+
+.preview-lg {
+width:200px;
+height:200px;
+    
+}
+
+
+#imgDisplay
+{
+    vertical-align: top;
+}
+
+
+@media only screen and (max-width: 959px) and (min-width: 768px)
+{
+ .img-preview {  margin-right: 25%;}   
+}
+@media only screen and (max-width: 1024px) and (min-width: 960px)
+{  .img-preview {  margin-right: 25%;}   }
+
+@media only screen and (max-width: 767px) and (min-width: 650px)
+{ .img-preview {      margin-right: 2%; }}

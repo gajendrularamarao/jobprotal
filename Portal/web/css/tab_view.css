@@ -1,0 +1,109 @@
+.tax_tab_view{
+            white-space: nowrap;
+            overflow-x: scroll; 
+            
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 3px;
+            text-align: left;
+            width: auto;
+            font-size: 11px;
+        }
+        .tax_tab_view thead {
+            background-color: #224A7E;
+            color: #fff;
+        }
+        .tax_tab_view th, .tax_tab_view td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px 6px 0px;
+        }
+        .tax_tab_view td{
+            font-size: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+    /*---------------------------*/    
+        .wtax_tab_view{
+            white-space: nowrap;
+            overflow-x: scroll; 
+            
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 3px;
+            text-align: left;
+            width: auto;
+            font-size: 11px;
+        }
+        .wtax_tab_view thead {
+            background-color: #224A7E;
+            color: #fff;
+        }
+        .wtax_tab_view th, .wtax_tab_view td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px 6px 0px;
+        }
+        .wtax_tab_view td{
+            font-size: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+    /*---------------------------*/    
+        .wtan_tab_view{
+            white-space: nowrap;
+            overflow-x: scroll; 
+            
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 3px;
+            text-align: left;
+            width: auto;
+            font-size: 11px;
+        }
+        .wtan_tab_view thead {
+            background-color: #224A7E;
+            color: #fff;
+        }
+        .wtan_tab_view th, .wtan_tab_view td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px 6px 0px;
+        }
+        .wtan_tab_view td{
+            font-size: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+    /*---------------------------*/    
+        .pt_tab_view{
+            white-space: nowrap;
+            overflow-x: scroll; 
+            
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 3px;
+            text-align: left;
+            width: auto;
+            font-size: 11px;
+        }
+        .pt_tab_view thead {
+            background-color: #224A7E;
+            color: #fff;
+        }
+        .pt_tab_view th, .pt_tab_view td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px 6px 0px;
+        }
+        .pt_tab_view td{
+            font-size: 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+        
+        

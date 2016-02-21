@@ -1,0 +1,312 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 25, 2015, 1:46:33 PM
+    Author     : cat01
+*/
+
+
+
+#registration th {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th {
+    text-align: left;
+}
+
+#img_panel
+{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    margin:0px;
+    border: 1px #B6B6B4 solid;
+    padding: 0;
+    /* border-radius: 15px; */
+    overflow: hidden;
+
+}
+#img_panel img{
+    width: 102%;
+    height: 102%;
+    /*border-radius: 15px;*/
+    border: medium hidden;
+    overflow: hidden;
+    margin: -2px;
+
+
+}
+td,th {height:20px;}
+th lable{    white-space: nowrap;}
+
+/* Form Progress */
+.progress {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+
+}
+.progress .circle,
+.progress .bar {
+    display: inline-block;
+    background: #fff;
+    width: 48px; 
+    height: 47px;
+    border-radius: 48px;
+    border: 1px solid #4C9ED9;
+    text-align: center;
+}
+.progress .bar {
+    position: relative;
+    width: 80px;
+    height: 4px;
+    top: -37px;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+.progress .circle .label {
+    display: inline-block;
+    width: 40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 40px;
+    margin-top: 3px;
+    color: #3BAAE3 ;
+    font-size: 20px;
+    text-align: center;
+}
+.progress .circle .title {
+    color: #b5b5ba;
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: -5px;
+}
+
+/* Done / Active */
+.progress .bar.done,
+.progress .circle.done {
+    /*background: #eee;*/
+    color:#FC3;
+}
+.progress .bar.active {
+    background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+
+
+}
+.progress .circle.done .label {
+    color: #FFF;
+    background: #3BAAE3;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progress .circle.done .title {
+    color: #3BAAE3;
+}
+.progress .circle.active .label {
+    color: #FFF;
+    background: #0c95be;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+.progress .circle.active .title {
+    color: #0c95be;
+    font-weight: bold
+}
+#descriptor_Text,#shortDesc_Text{
+        width: 93% !important;margin: 0;
+       
+}
+#registration table th{width: 10%;padding:0%; }
+#registration table th input{width: 84%;}
+
+
+table#regRorm2Table ,
+table#regRorm3Table ,
+table#regRorm4Table,
+table#regRorm5Table,
+table#regRorm6Table,
+table#regRorm5Table  {width:100% } 
+
+#regRorm2TableInnr input[type="text"],
+#regRorm8 input[type="text"],
+
+#regRorm3 input[type="text"],
+#regRorm4 input[type="text"],
+#regRorm5 input[type="text"],
+#regRorm6 input[type="text"]{
+    margin: 5px 0px !important;
+    border-radius: 2px;
+    border: 1px solid #B6B6B4;
+    max-width:85%; }
+#regRorm1Table textarea{border: 1px solid #B6B6B4;padding: 3px;}
+#regRorm1Table th{padding: none ; }
+#registration table th {width: 10%;padding:5px 5px ;}
+#registration table th input {
+    border-radius: 2px;
+    border: 1px solid #000;
+}
+
+.ui-accordion .ui-accordion-content th {
+    font-weight: bolder;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+
+table#img td img {
+    width: 18px;
+    cursor: pointer;
+}
+
+.vsn-froms{                              
+
+    margin: 10px 0px;
+    font-size: 1em;
+    font-family: arial;
+    /*border: 1px solid #2694E8;*/
+    border-radius: 10px;
+    width: 100%;
+    float: left;
+    height: auto;
+
+    /*  border: 1px #2694E8 solid;*/
+
+
+}
+@media screen and (min-width: 1259px) {
+    
+#descriptor_Text{
+        width: 93% !important;margin: 0;
+     
+}}
+@media screen and (min-width: 1260px) and (max-width: 1419px){
+    #registration table th {width: 10%;padding:5px 5px }
+    #descriptor_Text{
+        width: 93% !important;margin: 0;
+       
+}
+}
+@media screen and (min-width: 1420px) and (max-width: 1659px){
+     #registration table th {width: 10%;padding:5px 5px }
+     #registration table th input{width: 84%;}
+}
+@media only screen and (min-width: 960px) and (max-width: 1024px){
+      #descriptor_Text{ width: 93% !important;margin: 0;}  
+      #registration table th{width: 10%;}
+      #registration table th input{width: 84%;}
+}
+
+
+#regRorm2Table th input[type='text']{
+    text-transform:uppercase;
+}
+
+.fv-stp-btn{margin-bottom: 0px;}
+#wait{
+    display:none;
+    border-style: none;
+    background: transparent;
+    width:69px;
+    height:89px;
+    position:absolute;
+    position:absolute;
+    top: 50%;left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+#Breadcrumbs{
+    width: 100%;
+    float: left;
+    height: auto;   
+
+}
+#Breadcrumbs ul{float: left;margin-top: 20px;}
+#statusflowstatus{width: auto;float: left;margin-left: 13%;height: auto;}
+#regRorm1Table{border-collapse:collapse;width:100%; margin: 0 auto;}
+#mat_crt_td{vertical-align: top;width: 87%;}
+#descript_inpt{width: 95%;margin: 0;}
+#popupWrap{
+
+    overflow: auto;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#popUpTable{
+}
+#popUpTable th{
+    color:#FFF;font-size: 12px;background: #2694E8;
+    border-bottom:1px solid;}
+#popUpTable td{     
+    padding: 1px !important;
+    border:1px solid !important;
+
+    font-size: 12px;
+}
+
+.dip-noNe{display: none ;}
+
+img.incoterms{margin-left:-3px;vertical-align:middle;margin-top: -2px;cursor: pointer;}
+
+#registration{float:left;width: 100% !important;border-radius: 10px;border:1px #2694e8 solid;margin: 15px 0;}
+
+#regRorm1Table{border-collapse:collapse;width:100%; margin: 0 auto;}
+
+#mat_creation_form_table{vertical-align: top;width: 100%;}
+
+#shortDesc_TextArea{width: 97% !important;}
+#img_td{padding-right: 5px;vertical-align: middle;}
+img.srch_icn{margin-left: 2%;
+vertical-align: middle;
+cursor: pointer;
+height: 15px;
+width: 7%;
+margin-top: -4px;}
+th#description .srch_icn{width: 3%;margin-left: 0%;padding-left:4px;}
+
+input#descriptor_Text,input#shortDesc_Text{padding-left:4px;}
+
+div#accdiv{float: left;width:100%;margin: 10px 0;border:1px #2694e8 solid}
+
+.mm_grid_icn{cursor:pointer;height: 16px;margin-left:5px;}
+.trSelect td{
+    background: #D7EBF9 ;
+/*    color:#FFF;*/
+    
+}
+
+table.hideTable{
+    display: none;
+    
+    
+}
+table.displayTable{    
+    float: left;
+    width: 100% !important;
+    margin: 10px 0;
+    
+}
+
+table.displayTable td,table.displayTable th{
+   padding: 3px 5px;   
+  
+}
+
+table.displayTable th{
+               
+}
+
+table.grid_table th{ 
+                color:#FFF;
+                font-weight: bold;
+                background:#3BAAE3; 
+                border-left:#CCC;
+                border-left: 1px #FFF solid;}
+table.displayTable td{border: 1px #CCC solid;}
+input[type="text"]{text-transform: uppercase}
+
+ #regRorm8 table.displayTable th{padding: 0px 5px;}

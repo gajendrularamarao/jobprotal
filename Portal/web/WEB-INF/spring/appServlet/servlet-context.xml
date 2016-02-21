@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:solr="http://www.springframework.org/schema/data/solr"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.2.xsd
+http://www.springframework.org/schema/data/solr
+http://www.springframework.org/schema/data/solr/spring-solr.xsd
+http://www.springframework.org/schema/task
+http://www.springframework.org/schema/task/spring-task-3.0.xsd
+">
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<mvc:annotation-driven />
+<!--    <task:annotation-driven/>-->
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	
+	 
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+    
+    <mvc:resources mapping="/jqwidgets/styles/**" location="/jqwidgets/styles/**" />
+   
+    <mvc:resources mapping="/javascript/**" location="/javascript/**" />
+    <mvc:resources mapping="/js/**" location="/js/**" />
+<!--    <mvc:resources mapping="/style/**" location="/style/**" />-->
+    <mvc:resources mapping="/images/**" location="/images/**" />
+<!--    <mvc:resources mapping="/pagepics/**" location="/pagepics/**" />-->
+<!--    <mvc:resources mapping="/stylesheets/**" location="/stylesheets/**" />-->
+<!--    <mvc:resources mapping="/vcss/**" location="/vcss/**" />-->
+    <mvc:resources mapping="/css/**" location="/css/**" />
+      
+    
+      <mvc:resources mapping="/attachments/**" location="/attachments/**" />
+    
+    
+    
+    
+     <tx:annotation-driven transaction-manager="transactionManager" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory 
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>-->
+     <mvc:interceptors>
+         <mvc:interceptor>
+             <mvc:mapping path="/**"/>
+<!--             <mvc:exclude-mapping path="/loginhandler"/>         -->
+             <bean class="com.portal.job.interceptor.SessionInterceptor" />
+
+         </mvc:interceptor>
+     </mvc:interceptors>
+<!--     <mvc:interceptors> 
+     <bean class="com.pilog.mdrm.interceptor.SessionInterceptor" />
+
+     </mvc:interceptors>-->
+     
+<!--     <bean id="sessionService" class="com.pilog.mdrm.service.SessionService" />-->
+	<bean
+		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="mediaTypes">
+			<map>
+				<entry key="json" value="application/json" />
+				<entry key="html" value="text/html" />
+			</map>
+		</property>
+		<property name="viewResolvers">
+			<list>
+				<bean
+					class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+					<property name="prefix" value="//WEB-INF/views/" />
+					<property name="suffix" value=".jsp" />
+				</bean>
+			</list>
+		</property>
+		<property name="defaultViews">
+			<list>
+				<bean
+					class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+					<property name="prefixJson" value="false" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	<context:component-scan base-package="com.portal.job" />
+	
+	 <bean id="localeResolver"
+          class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+        <property name="defaultLocale" value="en" />
+    </bean>
+
+    <bean id="localeChangeInterceptor"
+          class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <property name="paramName" value="language" />
+    </bean>
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" >
+        <property name="interceptors">
+            <list>
+                <ref bean="localeChangeInterceptor" />
+            </list>
+        </property>
+    </bean>
+     <bean id="messageSource"
+          class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages" />
+    </bean>
+    <bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="52428800" />
+		<property name="maxInMemorySize" value="52428800" />
+	</bean>
+
+	<bean id="projectPropertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>//resources/db.properties</value>
+              
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+
+		<property name="dataSource">
+			<ref bean="dataSourceBean" />
+		</property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+ 				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop> 
+ 				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop> 
+				<prop key="hibernate.use_sql_comments">${hibernate.use_sql_comments}</prop>
+				<prop key="hibernate.validator.apply_to_ddl">${hibernate.validator.apply_to_ddl}</prop>
+				<prop key="hibernate.validator.autoregister_listeners">${hibernate.validator.autoregister_listeners}</prop>
+                               
+<!-- 				<prop key="hibernate.hbm2ddl.auto">update</prop> -->
+			</props>
+		</property>
+<!--		<property name="mappingLocations">
+			<value>classpath:com/pilog/mdrm/pojo/hbm/*.xml</value>
+		</property>-->
+		<property name="packagesToScan">
+			<value>com.portal.job.pojo</value>
+		</property>
+
+	</bean>
+
+	<bean id="dataSourceBean" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+<!--        <bean id="dataSourceBean" class="org.springframework.jndi.JndiObjectFactoryBean">
+            <property name="jndiName" value="${jndiname}"/>
+            <property name="jndiName" value="jdbc/Vision_Demo"/>
+        </bean>-->
+
+
+	 
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+       
+        <property name="host" value="smtp.gmail.com" />
+        <property name="port" value="587" />
+        <property name="username" value="jobportal5@gmail.com" />
+        <property name="password" value="jobportal123" />
+
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+                <prop key="mail.smtp.debug">true</prop>
+            </props>
+        </property>
+    </bean>
+    
+	
+     <bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+<!--	Quartz Scheduling configurations  -->
+
+      
+      
+<!--      <bean id="emailService" class="com.portal.job.service.EmailService"/>-->
+
+        <!-- Spring Quartz -->
+<!--        <bean name="runMeJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <bean name="runMeJob" class="org.springframework.scheduling.quartz.JobDetail">
+
+            <property name="jobClass" value="com.portal.job..scheduling.EmailScheduler" />
+
+            <property name="jobDataAsMap">
+                <map>
+                    <entry key="emailService" value-ref="emailService" />
+                </map>
+            </property>
+
+        </bean>-->
+
+        <!-- 
+        <bean id="runMeJob" 
+            class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean"> 
+                <property name="targetObject" ref="runMeTask" /> 
+                <property name="targetMethod" value="printMe" /> 
+        </bean> 
+        -->
+
+        <!-- Simple Trigger, run every 5 seconds -->
+<!--        <bean id="simpleTrigger" 
+              class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+
+            <property name="jobDetail" ref="runMeJob" />
+            <property name="repeatInterval" value="5000" />
+            <property name="startDelay" value="1000" />
+
+        </bean>-->
+
+        <!-- Cron Trigger, run every 5 seconds -->
+<!--        <bean id="cronTrigger" 
+              class="org.springframework.scheduling.quartz.CronTriggerBean">
+
+            <property name="jobDetail" ref="runMeJob" />
+            <property name="cronExpression" value="0/900 * * * * ?" />
+
+        </bean>
+
+        <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+            <property name="jobDetails">
+                <list>
+                    <ref bean="runMeJob" />
+                </list>
+            </property>
+
+            <property name="triggers">
+                <list>
+                    <ref bean="cronTrigger" />
+                </list>
+            </property>
+        </bean>-->
+</beans>

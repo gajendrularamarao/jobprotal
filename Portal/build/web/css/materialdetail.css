@@ -1,0 +1,183 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Aug, 2015, 7:26:22 PM
+    Author     : pilog
+*/
+
+.h3{
+    font-size:12px;
+}
+body{
+    font-family: Verdana,Arial,sans-serif !important;font-size: 12px !important;
+    
+}
+
+ .ui-widget-header {
+                border: 1px solid #9aaec8;
+                background: #b9cfed url(../images/jquery-ui-theme/ui-bg_highlight-soft_90_b9cfed_1x100.png) 50% 50% repeat-x;
+                color: #202020;
+                font-weight: bold;
+            }
+
+            .ui-dialog .ui-dialog-titlebar {
+                border-radius: 2px 2px 0 0;
+                border-width: 0 0 1px 0;
+            }
+            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+                /*  border: 1px solid #336598;
+                  background: #d7ebf9 url(../images/jquery-ui-theme/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x;
+                background-color: #3baae3;
+                  font-weight: bold;
+                  border-radius: 10px;
+              
+                  font-family: 'Helvetica Neue', Helvetica, Arial, Arial,sans-serif;
+                  padding: 0;*/
+                cursor: pointer;
+                height: 25px;
+                width: auto;
+                color: #000;
+                border: 1px solid #2694e8;
+                background: #d7ebf9 url(images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x;
+                font-weight: bold;
+                border-radius: 5px;
+                color: #2779aa;
+            }
+
+            .ui-button-text-only .ui-button-text {
+                padding: .1em 1em;
+            }
+            CAPTION.caption2{
+                font-weight: bold;
+                font-family: Arial;
+                font-size: 18px;
+                color: #000000;
+
+            }
+            TABLE.table1{
+
+                border-top-color: #000000;
+                border-bottom-color: #000000;
+                border-left-color: #000000;
+                border-right-color: #000000;
+                border-top-style: solid;
+                border-bottom-style: solid;
+                border-left-style: solid;
+                border-right-style: solid;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+                border-left-width: 1px;
+                border-right-width: 1px;
+            }
+
+            CAPTION.caption1{
+                text-align: left;
+
+                font-weight: bold;
+                font-family:  Arial;
+                font-size: 14px;
+                color: #ffffff;
+                background-color: #3baae3;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 2px;
+                padding-right: 2px;
+
+            }
+
+            TABLE.table1{
+
+                border-top-color: #000000;
+                border-bottom-color: #000000;
+                border-left-color: #000000;
+                border-right-color: #000000;
+                border-top-style: solid;
+                border-bottom-style: solid;
+                border-left-style: solid;
+                border-right-style: solid;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+                border-left-width: 1px;
+                border-right-width: 1px;
+            }
+
+            TH.TH1{
+                text-align: left;
+                font-weight: bold;
+                font-family: Arial;
+                font-size: 14px;
+                color: #000000;
+                background-color: #e7eef0;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 2px;
+                padding-right: 2px;
+                font-style: italic;
+
+            }
+
+
+            TH.TH2{
+                text-align: left;
+                font-weight: bold;
+                font-family:  Arial;
+                font-size: 11px;
+                color: #000000;
+                background-color:#d7ebf9 ;
+                /*            background-color: #e7eef0;*/
+                padding: 2px 5px;
+
+                width: auto;
+            }
+
+            .tabhead{
+                /*            background-color:#e7eef0 ;*/
+                font-size: 11px;
+                font-family: Arial;
+                color:black;
+                text-align : left;
+                font-weight: bold;
+                width:170px;
+            }
+            TD.H3{
+           //    background-color: #e7eef0;
+                color : #000000;
+                text-align : left;
+                font-family: Verdana,Arial,sans-serif;
+                fonct-size:12px !important;
+            }
+            TD.H4{
+           //    background-color: #e7eef0;
+                color : #000000;
+                text-align : left;
+                font-family: Verdana,Arial,sans-serif;
+                font-size: 12px;
+            }
+
+            .tabdata{
+                color : #000000;
+                font-size: 11px;
+                width:170px;
+                font-family: Arial;
+                text-align:left; 
+            }
+
+            .button{
+                color: #000000;
+                font-family: Arial;
+                font-size: 11px;
+                font-weight: bold;
+                padding: 0px;
+                margin-left: 10px;
+            }
+
+            img{
+                border: none;
+            }
+            .p1 {
+                background-color: #ffffff;
+                text-align : center;
+            }

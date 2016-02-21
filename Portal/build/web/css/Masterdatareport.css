@@ -1,0 +1,222 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 14, 2016, 3:15:59 PM
+    Author     : catalog13
+*/
+ 
+ 
+         @media screen and (max-width:768px) {
+              div.sHTabs ul.nav {height:100%;}
+         }
+         
+        
+
+        
+
+            .ui-menu { width: 150px; }
+            .ui-widget-header { padding: 0.2em; }
+
+            #jqxWidget{
+                display: inline-block;
+                height: 25px;
+                margin-left: 0%;
+                margin-top: 7px;
+                width: 150px;
+            }
+
+            #jqxDropDownList{
+                display: inline-block;
+                height: 25px;
+                margin-left: 0%;
+                margin-top: 7px;
+                width: 150px;
+            }
+       
+
+
+            #example {
+                font-family:  Arial;
+                width: 100%;
+                border: 4px solid #EBF4FA;
+                border-radius: 10px;
+            }
+
+            #example td, #example th {
+                font-size: 1em;
+                border: 1px solid #EBF4FA;
+                padding: 3px 7px 2px 7px;
+
+            }
+
+            .dataTables_scrollHead {
+                font-size: 1.1em;
+                text-align: left;
+                padding-top: 5px;
+                padding-bottom: 4px;
+                background-color:#EBF4FA;
+                color: black;  
+                text-align: left;
+                border-radius: 5px;
+
+            }
+
+            #example tr.alt td {
+                color: #000000;
+                background-color: #EAF2D3;
+            }
+
+
+      
+
+            section.uRegion1 {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                clear: both;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                box-shadow: 0 0 5px #CCCCCC;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+96,ededed+100 */
+                /*background: #ffffff;  Old browsers 
+                background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 96%, #ededed 100%);  FF3.6+ 
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(96%,#f6f6f6), color-stop(100%,#ededed));  Chrome,Safari4+ 
+                background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 96%,#ededed 100%);  Chrome10+,Safari5.1+ 
+                background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 96%,#ededed 100%);  Opera 11.10+ 
+                background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 96%,#ededed 100%);  IE10+ 
+                background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 96%,#ededed 100%);  W3C 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );  IE6-9 */
+
+                border: 1px solid #0E4B8A;
+                color: #333;
+                margin: 0 0 8px 0;
+                overflow: hidden;
+            }
+
+            section.uRegion1:hover
+            {
+                /*-moz-box-shadow: 0 0 20px #DAD4D4;*/ 
+                /*-webkit-box-shadow: 0 0 20px #DAD4D4;*/
+                /*box-shadow: 0 0 20px #DAD4D4;*/ 
+                /*background: -webkit-linear-gradient(160deg, rgb(247, 255, 255) 0%, rgb(178, 199, 228) 0%, rgb(152, 186, 232) 93%, rgb(156, 182, 217) 100%);*/
+                /*background: -o-linear-gradient(160deg, rgb(247, 255, 255) 0%, rgb(178, 199, 228) 0%, rgb(152, 186, 232) 93%, rgb(156, 182, 217) 100%);*/
+                /*background: -ms-linear-gradient(160deg, rgb(247, 255, 255) 0%, rgb(178, 199, 228) 0%, rgb(152, 186, 232) 93%, rgb(156, 182, 217) 100%);*/
+                /*background: -moz-linear-gradient(160deg, rgb(247, 255, 255) 0%, rgb(178, 199, 228) 0%, rgb(152, 186, 232) 93%, rgb(156, 182, 217) 100%);*/
+                /*background: linear-gradient(290deg, rgb(247, 255, 255) 0%, rgb(178, 199, 228) 0%, rgb(152, 186, 232) 93%, rgb(156, 182, 217) 100%);*/
+
+            }
+            .im2 {
+                width: 100%;
+                text-align: center;
+                font-weight: 600;
+                font-size: small;
+                vertical-align: middle;
+                text-indent: 10px;
+            }
+            td a
+            {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+                color: #003082;
+                text-shadow: 0 0 1px #3467A9;
+            }
+
+            .im1 {
+                width: 30%;
+                vertical-align: middle;
+            }
+            .m1 {
+                width: 48%;
+                float:right;
+                float:left;
+                margin-left: 20px;
+            }
+            .m2 {
+                width: 4%;
+                float: left;
+                margin-left: 20px;
+            }
+            .m2 section.uRegion1 {
+                border: none;
+            }
+            td img {
+                margin-left: 10px;
+                margin-right: auto;
+                display: block;
+                height: 70px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+       
+/*            .clearfilteringbutton {
+                background: rgba(0, 0, 0, 0) url("images/filter_search.png") no-repeat scroll 60px 5px / 18px auto;
+                display: inline;
+                text-align: left !important;
+                width: 80px;
+                 border-radius: 5px;
+                border:2px solid #E0E9F5;
+            }*/
+  .excel {
+                background: rgba(0, 0, 0, 0) url("../images/excel_search.png") no-repeat scroll 60px 2px / 18px auto;
+                display: inline;
+                text-align: left !important;
+                width: 80px;
+                border-radius: 5px;
+                border:2px solid #E0E9F5;
+.cvs {
+                 background: rgba(0, 0, 0, 0) url("../images/csv_search.png") no-repeat scroll 60px 2px / 18px auto;
+                display: inline;
+                text-align: left !important;
+                width: 80px;
+                border-radius: 5px;
+                border:2px solid #E0E9F5;
+}
+    .excel:hover{
+         background-color:#2694e8;
+         color: white;
+          border:1px solid #E0E9F5;
+          border-radius: 9px;
+    }
+    
+    .csv:hover{
+        background-color:#2694e8;
+         color: white;
+          border:1px solid #E0E9F5;
+          border-radius: 9px;
+    }
+            }
+          .clearfilteringbutton {
+        background: rgba(0, 0, 0, 0) url("../images/filter_search.png") no-repeat scroll 60px 5px / 18px auto;
+      display: inline;
+                text-align: left !important;
+                width: 80px;
+                 border-radius: 5px;
+                border:2px solid #E0E9F5;
+         }
+      .clearfilteringbutton:hover{
+        background-color:#2694e8;
+         color: white;
+          border:1px solid #E0E9F5;
+          border-radius: 9px;
+    }    
+     .input123{
+     cursor: pointer;
+    margin-top: 1%;
+    height: 25px;
+    /*width: auto;*/
+    color: #000;
+    border: 1px solid #2694e8 !important;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #2779aa;
+}
+            

@@ -1,0 +1,312 @@
+     div.fieldContainer > label {
+                color: #404040;
+                display: inline-block;
+                font: 13px/16px "Helvetica Neue",Helvetica,Arial,sans-serif;
+                padding: 3px 8px 3px 0;
+            }
+         
+          
+
+            section.uRegion input.text_field, section.uRegion select.selectlist, section.uRegion input.password, 
+            section.uRegion input[type="text"], section.uRegion input[type="password"], section.uRegion textarea, 
+            table.uReport input.text_field, table.uReport select.selectlist, table.uReport input.password, 
+            table.uReport input[type="text"], table.uReport input[type="password"], table.uReport textarea, 
+            div.fieldContainer input.text_field, div.fieldContainer select.selectlist, div.fieldContainer input.password, 
+            div.fieldContainer input[type="text"], div.fieldContainer input[type="password"], 
+            div.fieldContainer textarea 
+            {
+                -moz-border-bottom-colors: none;
+                -moz-border-left-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-top-colors: none;
+                background-color: #FFFFFF;
+                border-color: #C0C0C0 #C0C0C0 #B0B0B0;
+                border-image: none;
+                border-radius: 2px 2px 2px 2px;
+                border-style: solid;
+                border-width: 1px;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
+                color: #404040;
+                font-size: 18px;
+                line-height: 18px;
+                margin: 0;
+                padding: 4px;
+                transition: border 0.1s ease 0s, box-shadow 0.1s ease 0s;
+            }
+            header#uHeader nav {
+                background-color: #85B3EF;
+                background-image: linear-gradient(#C1D5EE, #85B3EF);
+                background-size: 100% auto;
+                border-top: 1px solid #4F7CB7;
+                box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+                position: relative;
+            }
+            select.dateselector-year,select.dateselector-month,select.dateselector-day {
+            border-radius: 3px;            
+            border: 1px solid black;
+            }
+            div.userBlock span, div.userBlock a, div.uFooterContent a {
+                font: 11px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-weight:bolder;
+                height: 20px;
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
+                text-transform: capitalize;
+                padding: 2px;
+            }
+            
+            #first_name{
+                text-transform:uppercase;
+            }
+            ::-webkit-input-placeholder { /* WebKit browsers */
+                text-transform:  initial;
+            }
+            :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                text-transform:  initial;
+            }
+            ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                text-transform: initial;
+            }
+            :-ms-input-placeholder { /* Internet Explorer 10+ */
+                text-transform: initial;
+            }
+
+            /*input[type='text'] {text-transform: uppercase}*/
+
+            header#uHeader nav ul.uMainNav li a {
+                border-left: 1px solid rgba(255, 255, 255, 0.15);
+                color: rgba(0, 0, 0, 0.75);
+                display: block;
+                float: left;
+                font: bold 12px/36px "Helvetica Neue",Helvetica,Arial,sans-serif;
+                padding: 0 16px;
+                text-align: center;
+                text-decoration: none;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+                transition: background 0.1s ease 0s;
+            }
+            .ui-widget-content {
+                background: #FFF url("../../images/jquery-ui-theme/ui-bg_flat_75_fafafa_40x100.png") repeat-x scroll 50% 50%;
+                color: #404040;
+             }
+             
+             
+             #user_registrationtable th {width: 9%;padding:5px 5px }
+             #user_registrationtable th input{padding-left: 5px;}
+            #user_registrationth {font-weight: bolder; font-family: Arial, Helvetica, sans-serif;}
+            .ui-accordion .ui-accordion-content th {font-weight: bolder; font-family: Arial, Helvetica, sans-serif;}
+            img{cursor: pointer}
+            #panel {
+                background: #224a7e url(pagepics/images/ui-bg_highlight-soft_90_b9cfed_1x100.png) 50% 50% repeat-x; 
+                margin: 10px 10px; 
+                width: 250px;
+                font: 20px/25px "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-weight: bold;
+                color: #003bb3;
+                border-radius: 5px;
+                text-align: center;
+            }
+            #buttondivid td.noborder{
+                border: none; 
+            }
+            th{
+                text-align: left;
+            }
+            table#img {vertical-align: middle;}
+            .registerate{background-color: #FFFFFF;  }
+             #accdiv { border: none;}
+            
+            p#CaptchTxt {
+                       height: 50px;
+                       width: 58%;                      
+                       /* font-weight: bold; */
+                       color: #fff;
+                       font-size: 20px;
+                       /* top: 20px; */
+                       /* vertical-align: 81%; */                       
+                       background-color: #5BC0DE;
+                       border-radius: 3px;
+                       margin-top: -7px;
+                       }
+             
+               .registertop {border-top:none;padding-top:10px;}
+            .registerbottom {border-top:none;}
+            .socialregi{padding-left:5px;}
+        	#socialiconsce{width:40%;}
+	.pciscss{position:relative;right:5px;top:2px;}
+          div.userBlock {width: 10%;}
+ 
+                                                
+.onecolor{
+     vertical-align: 2px;
+     z-index: 23;
+  margin-left: -2px;
+}
+.othercolor {
+     vertical-align: -3px;
+     z-index: 5;
+  margin-left: -2px;
+}
+
+.registerate {  margin: 35px 5px;}
+#user_registration table th{padding-bottom: 10px;}
+          #socialiconsce{width:40%;margin: 0px auto;}
+          #user_registration table:not(#socialiconsce)  { border-collapse:collapse;width:90%;margin-left:40px;}
+          #user_registration table th input:not(#first_name):not(#mob_a):not(#tel_no_a):not(#tel_no_c):not(#mobile_number):not(#phone_number):not([type="text"]):not([type="password"]){padding-right:30%;}
+       #user_registration table th input[type="text"]:not(#mob_a):not(#mobile_number):not(#tel_no_a):not(#tel_no_c):not(#phone_number):not(#first_name){width:70%;border-radius: 3px; border: 1px solid #B6B6B4;}
+        #user_registration table th input[type="password"]{width:70%;border-radius: 3px; border: 1px solid #B6B6B4;}
+            #user_registration table th #mob_a  {width:12%;border-radius: 3px;border: 1px solid #B6B6B4;}
+             #user_registration table th #first_name{width:85%;border-radius: 3px; border: 1px solid #B6B6B4;}
+ #user_registration table th #mobile_number  {width:56%;border-radius: 3px;    border: 1px solid #B6B6B4;}   
+  #user_registration table th #tel_no_a  {width:10%;border-radius: 3px;border: 1px solid #B6B6B4;}
+ #user_registration table th #tel_no_c  {width:10%;border-radius: 3px;border: 1px solid #B6B6B4;}
+ #user_registration table th #phone_number  {width:44%;border-radius: 3px;border: 1px solid #B6B6B4;}   
+#user_registration table th img:not(#rstCptch){width:5%;margin-left:-1%;vertical-align:middle;margin-top: -2px;}
+#user_registration table .dateselector-container {width:100%}
+#user_registration table .dateselector-day{width: 21%;}
+#user_registration table .dateselector-month{width:28%;margin-left: 1%;}
+#user_registration table .dateselector-year{width:19%;margin-left: 1%;}
+#user_registration table th #rstCptch{width:8%}
+       .col1{width:25%}
+        .col2{width:30%}
+        .col3{width:15%}
+        .col4{width:30%}
+        .col5{width:20%}
+        .col6{width:35%}
+        .col7{width:10%}
+        .col8{width:40%} 
+
+
+@media only screen and  (min-width: 1260px)and (max-width: 1419px){
+     #user_registration table th{padding-bottom: 10px;}
+          #socialiconsce{width:40%;margin: 0px auto;}
+          #user_registration table:not(#socialiconsce)  { border-collapse:collapse;width:90%;margin-left:40px;}
+          #user_registration table th input:not(#first_name):not(#mob_a):not(#tel_no_a):not(#tel_no_c):not(#mobile_number):not(#phone_number):not([type="text"]):not([type="password"]){padding-right:35%;}
+       #user_registration table th input[type="text"]:not(#mob_a):not(#mobile_number):not(#tel_no_a):not(#tel_no_c):not(#phone_number):not(#first_name){width:70%;}
+        #user_registration table th input[type="password"]{width:70%;}
+         #user_registration table th #mob_a  {width:12%}
+         #user_registration table th #first_name{width:85%;}
+ #user_registration table th #mobile_number  {width:56%} 
+  #user_registration table th #tel_no_a  {width:10%}
+ #user_registration table th #tel_no_c  {width:10%}
+ #user_registration table th #phone_number  {width:44%}   
+#user_registration table th img:not(#rstCptch){width:5%;}
+       .col1{width:22%}
+        .col2{width:30%}
+        .col3{width:15%}
+        .col4{width:30%}
+        .col5{width:20%}
+        .col6{width:35%}
+        .col7{width:10%}
+        .col8{width:40%} 
+}
+@media only screen and  (min-width: 1024px)and (max-width: 1260px) 
+{
+    #user_registration table th{padding-bottom: 10px;}
+          #socialiconsce{width:40%;margin: 0px auto;}
+          #user_registration table:not(#socialiconsce)  { border-collapse:collapse;width:90%;margin-left:40px;}
+          #user_registration table th input:not(#first_name):not(#mob_a):not(#tel_no_a):not(#tel_no_c):not(#mobile_number):not(#phone_number):not([type="text"]):not([type="password"]){padding-right:35%;}
+       #user_registration table th input[type="text"]:not(#mob_a):not(#mobile_number):not(#tel_no_a):not(#tel_no_c):not(#phone_number):not(#first_name){width:70%;}
+        #user_registration table th input[type="password"]{width:70%;}
+         #user_registration table th #first_name{width:85%;}
+         #user_registration table th #mob_a  {width:12%}
+ #user_registration table th #mobile_number  {width:56%}
+  #user_registration table th #tel_no_a  {width:10%}
+ #user_registration table th #tel_no_c  {width:10%}
+ #user_registration table th #phone_number  {width:44%}   
+#user_registration table th img:not(#rstCptch){width:5%;}
+       .col1{width:25%}
+        .col2{width:30%}
+        .col3{width:15%}
+        .col4{width:30%}
+        .col5{width:20%}
+        .col6{width:35%}
+        .col7{width:10%}
+        .col8{width:40%}   
+        
+}
+@media only screen and (min-width: 960px) and (max-width: 1024px)  {
+   #user_registration table th{padding-bottom: 10px;}
+          #socialiconsce{width:40%;margin: 0px auto;}
+          #user_registration table:not(#socialiconsce)  { border-collapse:collapse;width:90%;margin-left:40px;}
+          #user_registration table th input:not(#first_name):not(#mob_a):not(#tel_no_a):not(#tel_no_c):not(#mobile_number):not(#phone_number):not([type="text"]):not([type="password"]){padding-right:35%;}
+       #user_registration table th input[type="text"]:not(#mob_a):not(#mobile_number):not(#tel_no_a):not(#tel_no_c):not(#phone_number):not(#first_name){width:70%;}
+        #user_registration table th input[type="password"]{width:70%;}
+         #user_registration table th #mob_a  {width:12%}
+          #user_registration table th #first_name{width:85%;}
+ #user_registration table th #mobile_number  {width:56%}
+  #user_registration table th #tel_no_a  {width:10%}
+ #user_registration table th #tel_no_c  {width:10%}
+ #user_registration table th #phone_number  {width:44%}   
+#user_registration table th img{width: 8%;}
+       .col1{width:21%}
+        .col2{width:30%}
+        .col3{width:15%}
+        .col4{width:30%}
+        .col5{width:20%}
+        .col6{width:35%}
+        .col7{width:10%}
+        .col8{width:40%}  
+}
+@media only screen  and (min-width: 768px)and (max-width: 959px){
+   #user_registration table th{padding-bottom: 10px;}
+          #socialiconsce{width:40%;margin: 0px auto;}
+          #user_registration table:not(#socialiconsce)  { border-collapse:collapse;width:90%;margin-left:40px;}
+          #user_registration table th input:not(#first_name):not(#mob_a):not(#tel_no_a):not(#tel_no_c):not(#mobile_number):not(#phone_number):not([type="text"]):not([type="password"]){padding-right:35%;}
+       #user_registration table th input[type="text"]:not(#mob_a):not(#mobile_number):not(#tel_no_a):not(#tel_no_c):not(#phone_number):not(#first_name){width:70%;}
+        #user_registration table th input[type="password"]{width:70%;}
+         #user_registration table th #mob_a  {width:12%}
+          #user_registration table th #first_name{width:85%;}
+ #user_registration table th #mobile_number  {width:56%}   
+  #user_registration table th #tel_no_a  {width:10%}
+ #user_registration table th #tel_no_c  {width:10%}
+ #user_registration table th #phone_number  {width:44%}   
+#user_registration table th img:not(#rstCptch){width:5%;}
+       .col1{width:25%}
+        .col2{width:30%}
+        .col3{width:15%}
+        .col4{width:30%}
+        .col5{width:20%}
+        .col6{width:35%}
+        .col7{width:10%}
+        .col8{width:40%}  
+}
+@media screen and (min-width: 1900px)
+{
+  #user_registration table th{padding-bottom: 10px;}
+          #socialiconsce{width:40%;margin: 0px auto;}
+          #user_registration table:not(#socialiconsce)  { border-collapse:collapse;width:90%;margin-left:40px;}
+          #user_registration table th input:not(#first_name):not(#mob_a):not(#tel_no_a):not(#tel_no_c):not(#mobile_number):not(#phone_number):not([type="text"]):not([type="password"]){padding-right:35%;}
+       #user_registration table th input[type="text"]:not(#mob_a):not(#mobile_number):not(#tel_no_a):not(#tel_no_c):not(#phone_number):not(#first_name){width:70%;}
+        #user_registration table th input[type="password"]{width:70%;}
+         #user_registration table th #mob_a  {width:12%}
+          #user_registration table th #first_name{width:85%;}
+ #user_registration table th #mobile_number  {width:56%} 
+  #user_registration table th #tel_no_a  {width:10%}
+ #user_registration table th #tel_no_c  {width:10%}
+ #user_registration table th #phone_number  {width:45%}   
+#user_registration table th img:not(#rstCptch){width:5%;}
+       .col1{width:25%}
+        .col2{width:30%}
+        .col3{width:15%}
+        .col4{width:30%}
+        .col5{width:20%}
+        .col6{width:35%}
+        .col7{width:10%}
+        .col8{width:40%}
+        }  
+        
+ @media only screen and  (min-width: 533px)and (max-width: 853px) 
+ {
+ #user_registration table:not(#socialiconsce)  { border-collapse:collapse;width:100%;margin-left:0px;}    
+ p#CaptchTxt {width: 90%;}
+ #user_registration table th img { width: 12%;}
+ .col1{width:25%}
+        .col2{width:35%}
+        .col3{width:15%}
+        .col4{width:35%}
+        .col5{width:20%}
+        .col6{width:35%}
+        .col7{width:10%}
+        .col8{width:40%}
+ }
+
